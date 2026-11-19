@@ -1,0 +1,21 @@
+package com.sakshi_19nov;
+
+import java.util.Scanner;
+
+public class CountOfDigit {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any number to count its digit : ");
+		int n = sc.nextInt();
+		
+		int count = 0;
+		while (n>0) {
+			int digit = n%10;
+			count++;
+			n = n/10;
+			
+		}
+		System.out.println("Count of Digits : "+count);
+	}
+
+}
